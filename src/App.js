@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
 
 function App() {
 
@@ -12,6 +13,10 @@ function App() {
     return names[intx];
   }
 
+  const handleAge = () => {
+    return 40;
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +24,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to see changes.
         </p>
-        <p>Hello {name}!</p>
+        <p>Hello {name}! my age is {handleAge()}</p>
         <p>Your firend is {handleNameChange()}</p>
         <a
           className="App-link"
